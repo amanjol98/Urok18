@@ -1,0 +1,40 @@
+body {
+    height: 2000px;
+}
+.block {
+    margin-bottom: 10px;
+    padding: 15px;
+    color: rgb(247, 247, 247);
+    background: rgb(66, 79, 66);
+    border: 2px solid rgb(255, 249, 249);
+    border-radius: 8px;
+}
+
+#box-static {
+    position: static; /* Position static, ни на что не влияет, будет стоять по умолчанию в древе страницу html*/
+}
+
+#box-relative {
+    position: relative; /*Position-relative. Блок фактически также остается на своем месте, но визуально его смещаем на столько дистанции которая нам нужна*/
+    top: 10px;
+    left: 20px;
+}
+
+#box-absolute {
+    position: absolute; /*Position-absolute, держить абсолютную позицию в заданных отступах от краев относительно родительского объекта, либо если нету предка то относительно к боди*/
+    right: 10px;
+    bottom: 100px;
+}
+
+#box-fixed {
+    position: fixed; /*Position-fixed, держить фиксированную относительно краев страницы, и во время прокрутки остается непрокрученным*/
+    bottom: 50px;
+    right: 10px;
+}
+
+#box-sticky {
+    position: sticky; /*Position-sticky, прокручивается вверх, после чего у него будет эффект залипание по заданным отступам от краев страницы и займет позицию фиксед*/
+    width: 50px;
+    left: 400px;
+    top: 10px;
+}
